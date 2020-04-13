@@ -58,6 +58,7 @@ label=
 instance=eth0
 interval=10
 
+
 # Network interface monitoring
 #
 # If the instance is not specified, use the interface used for default route.
@@ -72,6 +73,31 @@ interval=60
 instance=tun0
 color=#c30fff
 interval=5
+
+[ssh]
+command=~/.config/i3blocks/scripts/systemctl
+interval=1
+markup=pango
+
+[httpd]
+command=~/.config/i3blocks/scripts/systemctl
+interval=1
+markup=pango
+
+[smbd]
+command=~/.config/i3blocks/scripts/systemctl
+interval=1
+markup=pango
+
+[vsftpd]
+command=~/.config/i3blocks/scripts/systemctl
+interval=1
+markup=pango
+
+[atftpd]
+command=~/.config/i3blocks/scripts/systemctl
+interval=1
+markup=pango
 
 [memory]
 label=
